@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Storybook + MSW
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Contoh setup MSW di storybook
 
-Currently, two official plugins are available:
+Package yang digunakan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Storybook](https://storybook.js.org/docs/react/get-started/install)
+- [MSW](https://github.com/mswjs/msw)
+- [MSW Storybook Addon](https://github.com/mswjs/msw-storybook-addon)
+- [Faker](https://github.com/faker-js/faker)
 
-## Expanding the ESLint configuration
+Sebelum running, berikut langkah-langkah setup:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Install and download [NodeJS](https://nodejs.org/dist/v18.14.0/) with verison 18.14.0
+2. Install [pnpm](https://pnpm.io/installation)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+npm install -g pnpm
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Buka dengan TextEditor dan install packages
+```bash
+pnpm install
+```
+4. Jalankan mode development:
+
+```bash
+pnpm dev
+```
+Jalankan Storybook:
+
+```bash
+pnpm storybook
+```
