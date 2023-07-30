@@ -1,0 +1,1 @@
+export {getUserList} from './user-record-list'

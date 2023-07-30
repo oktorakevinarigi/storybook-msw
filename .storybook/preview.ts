@@ -1,4 +1,10 @@
 import type { Preview } from "@storybook/react";
+import { initialize, mswLoader } from 'msw-storybook-addon';
+
+// Initialize MSW
+initialize({
+  onUnhandledRequest: 'bypass', // menghapus semua warning pada console log
+});
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +16,7 @@ const preview: Preview = {
       },
     },
   },
+  loaders: [mswLoader],
 };
 
 export default preview;
